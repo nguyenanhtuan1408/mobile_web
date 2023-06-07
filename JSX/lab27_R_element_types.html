@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        
+        function PostItem() {
+    return (
+        <div className="post-item">
+            <h1 className="post-title">Title post</h1>
+            <p className="post-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, soluta esse voluptatibus, repellat, explicabo deserunt impedit blanditiis quaerat a atque fuga nesciunt sunt quibusdam ab voluptate? Culpa nemo sequi illo?</p>
+            <img src="https://files.fullstack.edu.vn/f8-prod/courses/13/13.png" alt="" />
+        </div>
+    )
+}
+
+    const postContainer = (
+        <div className="post-container">
+            <PostItem />
+            <PostItem />
+            <PostItem />
+            <PostItem />
+        </div>    
+
+    )
+
+    ReactDOM.render(postContainer, document.getElementById('root'))
+    </script>
+</body>
